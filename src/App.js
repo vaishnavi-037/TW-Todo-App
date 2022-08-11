@@ -33,7 +33,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App" data-testid="main">
         <TodoInput todoInputValue={this.createTodoObj} />
         <TodosList todoList={this.state.allTodos} onChecked={this.handleCheckTodo}
           onDelete={this.handleDeleteTodo} />
